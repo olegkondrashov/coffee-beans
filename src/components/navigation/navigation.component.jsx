@@ -2,10 +2,10 @@
 import Logo from "../logo/logo.component";
 import { NavigationContainer } from "./navigation.styles";
 
-const Navigation = () => {
+const Navigation = ({type}) => {
   return (
     <NavigationContainer>
-        <Logo/>
+        <Logo type={type}/>
         <p>Our coffee</p>
         <p>For your pleasure</p>
     </NavigationContainer>

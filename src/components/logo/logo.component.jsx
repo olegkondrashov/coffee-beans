@@ -1,10 +1,11 @@
-import { LogoContainer, LogoImg, LogoText } from "./logo.styles"
+import { LogoContainer, LogoImg, LogoImgBlack, LogoText } from "./logo.styles"
+import { LOGO_TYPES } from "./logo.types";
 
 
-const Logo = () => {
+const Logo = ({type}) => {
     return (
         <LogoContainer>
-            <LogoImg/>
+            {type === LOGO_TYPES.BLACK ? <LogoImgBlack/> : <LogoImg/>}
             <LogoText>Coffee house</LogoText>
         </LogoContainer>
     )

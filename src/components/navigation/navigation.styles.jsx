@@ -8,6 +8,7 @@ export const NavigationContainer = styled.div`
     gap: 40px;
     margin-top: 30px;
     & p {
+        cursor: pointer;
         margin: 0 0 -2px 0;
     }
 `

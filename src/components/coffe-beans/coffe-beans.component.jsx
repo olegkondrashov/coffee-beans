@@ -3,17 +3,17 @@ import { Fragment } from "react";
 import { CoffeBeansContainerWhite, CoffeeBeansContainerBlack, CoffeebeansImgBlack, CoffeebeansImgWhite } from "./coffe-beans.styles";
 
 
-const Coffeebeans = (props) => {
+const Coffeebeans = ({type}) => {
     return (
         <Fragment>
             {
-                props.type === 'white' && 
+                type === 'white' && 
                     <CoffeBeansContainerWhite>
                         <CoffeebeansImgWhite/>
                     </CoffeBeansContainerWhite>
             }
             {
-                props.type === 'black' && 
+                type === 'black' && 
                     <CoffeeBeansContainerBlack>
                         <CoffeebeansImgBlack/>
                     </CoffeeBeansContainerBlack>

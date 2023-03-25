@@ -1,4 +1,4 @@
-export const COFFEE_BEANS_TYPES = {
+export const LOGO_TYPES = {
     WHITE: 'white',
     BLACK: 'black'
 }
